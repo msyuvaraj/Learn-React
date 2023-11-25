@@ -52,17 +52,18 @@
 - react element basically is an object.
   when we render this object onto the DOM then its becomes html element.
 
-  ```eg : const heading = React.createElement("h1",{ id: "heading" },"Hello from React");
+  ```jsx
+  eg : const heading = React.createElement("h1",{ id: "heading" },"Hello from React");
   const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(heading);
 
     here heading is an React element(object).
-
   ```
 
 - JSX is html-like or XML-like syntax.
 
-  eg : `const jsxHeading =<h1 className="heading">Namste React using jsx</h1>;`
+  eg : `jsx 
+      const jsxHeading =  <h1 className="heading">Namste React using jsx</h1>;`
 
   on console logging heading and jsxHeading both gives out same js Object.
 
@@ -82,8 +83,8 @@ functional Component - a function which returns an react element or jsx is calle
 
 _cross side scripting_ attacks can be stopped because of this sanitization.
 
-```const Heading = () => (
-
+```jsx
+const Heading = () => (
   <div>
     {JsxHeading()}
     <JsxHeading />
