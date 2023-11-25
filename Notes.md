@@ -52,11 +52,13 @@
 - react element basically is an object.
   when we render this object onto the DOM then its becomes html element.
 
-  eg : `const heading = React.createElement("h1",{ id: "heading" },"Hello from React");
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);`
+  ```eg : const heading = React.createElement("h1",{ id: "heading" },"Hello from React");
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(heading);
 
-                     here heading is an React element(object).
+    here heading is an React element(object).
+
+  ```
 
 - JSX is html-like or XML-like syntax.
 
@@ -68,7 +70,7 @@ root.render(heading);`
   parcel handovers this transpiling job to BABEL.
   after transpiled into an ReactElement-JS object it then rendered onto the DOM as an HTML element.
 
-        JSX => React.createElement => ReactElement-js object => HTML element
+        `JSX => React.createElement => ReactElement-js object => HTML element`
 
 # React Component
 
