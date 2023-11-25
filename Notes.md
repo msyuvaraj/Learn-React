@@ -56,7 +56,7 @@
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);`
 
-                 here heading is an React element(object).
+                     here heading is an React element(object).
 
 - JSX is html-like or XML-like syntax.
 
@@ -80,7 +80,7 @@ functional Component - a function which returns an react element or jsx is calle
 
 _cross side scripting_ attacks can be stopped because of this sanitization.
 
-`const Heading = () => (
+```const Heading = () => (
 
   <div>
     {JsxHeading()}
@@ -89,4 +89,5 @@ _cross side scripting_ attacks can be stopped because of this sanitization.
     <h1 className="heading"> React using Components</h1>
   </div>
 );
-other ways of calling a component inside another component`
+other ways of calling a component inside another component
+```
